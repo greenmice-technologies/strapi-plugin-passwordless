@@ -1,6 +1,5 @@
 import pluginPkg from '../../package.json';
 import pluginId from './utils/pluginId';
-import {prefixPluginTranslations} from '@strapi/helper-plugin';
 import pluginPermissions from './permissions';
 import getTrad from "./utils/getTrad";
 
@@ -53,7 +52,7 @@ export default {
           )
           .then(({default: data}) => {
             return {
-              data: prefixPluginTranslations(data, pluginId),
+              data,
               locale,
             };
           })

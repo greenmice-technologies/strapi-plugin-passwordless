@@ -31,9 +31,8 @@ module.exports = {
           environment: '',
           type: 'plugin',
           name: 'passwordless',
-          key: 'settings',
         })
-        .get(),
+        .get({ key: 'settings' }),
     });
   },
 
@@ -47,9 +46,8 @@ module.exports = {
         environment: '',
         type: 'plugin',
         name: 'passwordless',
-        key: 'settings',
       })
-      .set({ value: ctx.request.body });
+      .set({ key: 'settings', value: ctx.request.body });
 
     ctx.send({ ok: true });
   },

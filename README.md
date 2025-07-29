@@ -31,14 +31,14 @@ npx create-strapi-app my-project --quickstart
 
 - Configure the `Strapi email` plugin ( [official documentation](https://docs.strapi.io/developer-docs/latest/plugins/email.html) )
 
-- Add the `strapi-plugin-passwordless` plugin
+- Add the `@greenmice/strapi-passwordless-plugin` plugin
 
 ```bash
-yarn add strapi-plugin-passwordless@latest
+yarn add @greenmice/strapi-passwordless-plugin@latest
 
 # or
 
-npm i -S strapi-plugin-passwordless@latest
+npm i -S @greenmice/strapi-passwordless-plugin@latest
 ```
 
 - After successful installation you've to build a fresh package that includes plugin UI. To archive that simply use:
@@ -110,7 +110,8 @@ WIP
 
 ## 🙌 Versions 
 
-- `strapi-plugin-passwordless@4.x` - version for strapi v4
+- `@greenmice/strapi-passwordless-plugin@5.x` - version for strapi v5
+- `strapi-plugin-passwordless@4.x` - version for strapi v4 (original package)
 - `strapi-plugin-passwordless@3.x` - version for strapi v3 ([dev branch](https://github.com/kucherenko/strapi-plugin-passwordless/tree/v3)) 
 
 

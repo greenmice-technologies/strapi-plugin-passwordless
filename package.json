@@ -1,6 +1,6 @@
 {
-  "name": "strapi-plugin-passwordless",
-  "version": "4.0.15",
+  "name": "@greenmice/strapi-passwordless-plugin", 
+  "version": "5.0.0",
   "description": "A plugin for Strapi Headless CMS that provides ability to sign-in/sign-up to an application by link had sent to email.",
   "strapi": {
     "displayName": "Passwordless",
@@ -17,29 +17,29 @@
     "authentification"
   ],
   "author": {
-    "name": "Andrey Kucherenko",
-    "email": "kucherenko.andrey@gmail.com",
-    "url": "https://github.com/kucherenko"
+    "name": "GreenMice",
+    "email": "info@greenmice.it",
+    "url": "https://github.com/greenmice"
   },
   "maintainers": [
     {
-      "name": "Andrey Kucherenko",
-      "email": "kucherenko.andrey@gmail.com",
-      "url": "https://github.com/kucherenko"
+      "name": "GreenMice",
+      "email": "info@greenmice.it",
+      "url": "https://github.com/greenmice"
     }
   ],
   "engines": {
-    "node": ">=10.16.0",
+    "node": ">=18.0.0",
     "npm": ">=6.0.0"
   },
-  "homepage": "https://github.com/kucherenko/strapi-plugin-passwordless",
+  "homepage": "https://github.com/greenmice/strapi-plugin-passwordless",
   "license": "MIT",
   "devDependencies": {
     "cz-conventional-changelog": "3.3.0",
-    "jest": "^27.5.1"
+    "jest": "^29.0.0"
   },
   "peerDependencies": {
-    "@strapi/strapi": "^4.x"
+    "@strapi/strapi": "^5.0.0"
   },
   "config": {
     "commitizen": {
@@ -50,6 +50,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "nanoid": "^3.3.4"
+    "nanoid": "^5.0.0"
   }
 }

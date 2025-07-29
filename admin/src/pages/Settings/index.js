@@ -3,7 +3,6 @@ import {useMutation, useQuery, useQueryClient} from 'react-query';
 import {useIntl} from 'react-intl';
 import {Formik} from 'formik';
 import {
-  CheckPagePermissions,
   Form,
   GenericInput,
   LoadingIndicatorPage,
@@ -22,6 +21,7 @@ import {Stack} from '@strapi/design-system/Stack';
 import {Typography} from '@strapi/design-system/Typography';
 import {Grid, GridItem} from '@strapi/design-system/Grid';
 import Check from '@strapi/icons/Check';
+import {Page} from '@strapi/design-system/Page';
 import pluginPermissions from '../../permissions';
 import {getTrad} from '../../utils';
 import layout from './utils/layout';
@@ -29,9 +29,9 @@ import schema from './utils/schema';
 import {fetchData, saveSettings} from './utils/api';
 
 const ProtectedSettingsPage = () => (
-  <CheckPagePermissions permissions={pluginPermissions.readSettings}>
+  <Page permissions={pluginPermissions.readSettings}>
     <SettingsPage />
-  </CheckPagePermissions>
+  </Page>
 );
 
 const SettingsPage = () => {
